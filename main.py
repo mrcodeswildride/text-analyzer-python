@@ -16,4 +16,6 @@ for character in text:
 print()
 
 for character, count in characters.items():
-  print(f"{character}: {count / num_chars * 100}%")
+  decimal = count / num_chars
+  percent = decimal * 100
+  print(f"{character}: {percent:.2f}%")
